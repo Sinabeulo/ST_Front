@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "Ex_h_page";
+}
+<html>
+<head>
+    @* 출처 : https://velog.io/@jennayeo/html-css-%ED%8F%B0%ED%8A%B8-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0 *@
+    <title>H 태그와 폰트 적용 예제</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    @*<style>
+            https://fonts.google.com/specimen/Nanum + Pen + Script?subset=korean
+        </style>*@
+    <style>
+        * {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <button asp-action="Index" asp-controller="Base" type="submit">Go Home</button>
+    </form>
+    <h2>Ex_h_page</h2>
+
+    <br />
+    <h1>Hello</h1>
+    <hr />
+    <h2>Hello2</h2>
+    <h3>Hello3</h3>
+    <h4>Hello4</h4>
+    <h5>Hello5</h5>
+    <h6>Hello6</h6>
+
+    <p>Hello p</p>
+</body>
+</html>

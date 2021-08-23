@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+@*<li>
+    <a asp-action="HrefView" asp-controller="Base">a</a>
+</li>
+<li>
+    <a name="a_b" asp-action="HrefView" asp-controller="Base">b</a>
+</li>
+<li>
+    <a asp-route-id="10" asp-action="HrefView" asp-controller="Base">c</a>
+</li>*@
+
+<form>
+    <li>
+        @* Button name="항목" 항목과 컨트롤의 파라미터명이 같아야 파라미터로 전달된다. *@
+        <button name="button_id" value="ex_h_page" asp-action="HrefView" asp-controller="Base" type="submit">Ex H tag </button>
+    </li>
+</form>

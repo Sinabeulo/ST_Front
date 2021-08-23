@@ -56,7 +56,7 @@ namespace ANC_2_1210823_FrontStudy
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Base}/{action=Index}/{id?}");
             });
         }
     }

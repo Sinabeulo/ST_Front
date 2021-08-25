@@ -1,0 +1,70 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@* https://yjshin.tistory.com/entry/HTML5-4HTML-%EA%B3%B5%EA%B0%84-%EB%B6%84%ED%95%A0 *@
+
+<html>
+<head>
+    <title>레이아웃 구성 예제</title>
+    <style>
+        #header {
+            background-color: lightgray;
+            height: 100px;
+        }
+
+        #nav {
+            background-color: #339999;
+            color: white;
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+
+        #section {
+            width: 200px;
+            text-align: left;
+            float: left;
+            padding: 10px;
+        }
+
+        #footer {
+            background-color: #FFCC00;
+            height: 100px;
+            clear: both;
+        }
+
+        #header, #nav, #section, #footer {
+            text-align: center;
+        }
+
+        #header, #footer {
+            line-height: 100px;
+        }
+
+        #nav, #section {
+            line-height: 240px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <button asp-action="Index" asp-controller="Base" type="submit">Go Home</button>
+    </form>
+    <h1>div 요소를 이용한 레이아웃</h1>
+    <div id="header">
+        <h2>HEADER 영역</h2>
+    </div>
+    <div id="nav">
+        <p>NAV 영역</p>
+    </div>
+    <div id="section">
+        <p>SELECTION 영역</p>
+    </div>
+    <div id="footer">
+        <p>FOOTER 영역</p>
+    </div>
+</body>
+</html>
